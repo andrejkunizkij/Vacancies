@@ -1,110 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>form</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>HR APP</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+	integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<div class="wrapper">
-		<div class="hr__list">
-			<div class="hr__app-name">HR APP</div>
-			<ul class="hr__list-ul">
-				<li><a href="">Interview</a></li>
-				<li class="active"><a href="">Vacancies</a></li>
-				<li><a href="">Candidates</a></li>
-				<li><a href="">Management</a></li>
-			</ul>
-		</div>
+	<div class="container">
+		<!-- aside-->
+		<aside class="aside">
+			<h2 class="title aside__title">HR APP</h2>
+			<nav class="nav aside__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a class="nav__link" href="#">Interview</a></li>
+					<li class="nav__item"><a class="nav__link nav__link--active" href="#">Vacancies</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Candidates</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Management</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<!--// aside-->
+		<!--main-->
+		<main class="main">
+			<section class="main-section">
+				<header class="header main__header">
+					<div class="header-search">
+						<i class="fas fa-search"></i>
+						<input class="header-search__input" type="search" placeholder="Search for vacancies, candidates...">
+					</div>
+					<div class="user-nav">
+						<a class="user-nav__bell" role="button">
+							<i class="fas fa-bell"></i>
+						</a>
+						<a class="user-nav__login" role="button">
+							<i class="fas fa-sign-in-alt"></i>
+						</a>
+					</div>
+				</header>
+				<section class="section-top">
+					<h2 class="title section-top__title">Vacancies</h2>
+					<div class="filter section-top__filter">
+						<label class="filter__label" for="filter">
+							<span class="filter__label-description">Filter by</span>
+							<select class="filter-select" name="filter" id="filter">
+								<option class="filter-select__item" value="">lorem</option>
+								<option class="filter-select__item" value="">lorem</option>
+								<option class="filter-select__item" value="">lorem</option>
+							</select>
+						</label>
+						<span class="filter__item filter__item-active"></span>
+					</div>
+				</section>
+				<section class="section-table">
+					<table class="table">
+						<thead class="table-header">
+						<tr class="table-header__row">
+							<th class="table-header__item">Lorem ipsum</th>
+							<th class="table-header__item">Lorem ipsum</th>
+							<th class="table-header__item">Lorem ipsum</th>
+							<th class="table-header__item">Lorem ipsum</th>
+						</tr>
+						</thead>
+						<tbody  class="table-body">
+						<!-- row-1 -->
+						<tr class="table-body__row">
+							<th class="table-body__item table-body__item--th">Java Developer</th>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">View Candidates</td>
+						</tr>
+						<!--// row-1 -->
+						<!-- row-2 -->
+						<tr class="table-body__row">
+							<th class="table-body__item table-body__item--th">Java Developer</th>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">View Candidates</td>
+						</tr>
+						<!--// row-2 -->
+						<!-- row-3 -->
+						<tr class="table-body__row">
+							<th class="table-body__item table-body__item--th">Java Developer</th>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">View Candidates</td>
+						</tr>
+						<!--// row-3 -->
+						<!-- row-4 -->
+						<tr class="table-body__row">
+							<th class="table-body__item table-body__item--th">Java Developer</th>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">View Candidates</td>
+						</tr>
+						<!--// row-4 -->
+						<!-- row-5 -->
+						<tr class="table-body__row">
+							<th class="table-body__item table-body__item--th">Java Developer</th>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">View Candidates</td>
+						</tr>
+						<!--// row-5 -->
+						<!-- row-6 -->
+						<tr class="table-body__row">
+							<th class="table-body__item table-body__item--th">Java Developer</th>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">Lorem ipsum</td>
+							<td class="table-body__item">View Candidates</td>
+						</tr>
+						<!--// row-6 -->
+						</tbody>
+					</table>
+				</section>
+				<footer class="footer main__footer">
 
-		<div class="main_page">
-			
-				<input type="text" class="main_page-search " placeholder="Search for vacancies,candidates...">
-				
-			<h3>Vacancies</h3>
-			<div class="main_page-filters">
-				
-				<form>
-				 Filter by
-					<select class="filters-select">
-						<option></option>
-						<option></option>
-						<option></option>
-					</select>
-					<input type="search" class="filters_input">
-					<input type="search" class="filters_input">
-				</form>
-			</div>
+					<div class="footer-filter">
+						<label class="filter-pages" for="filter-page">
+							Rows per page.
+							<select class="filter-pages-select" name="filter" id="filter-page">
+								<option class="filter-pages__item" value="10">10</option>
+								<option class="filter-pages__item" value="20">20</option>
+								<option class="filter-pages__item" value="30">30</option>
+							</select>
+						</label>
+					</div>
 
-			<div class="candidates-information">
-				<div class="line first_line">
-					<div class="elem0"></div>
-					<div class="elem0"></div>
-					<div class="elem0"></div>
-					<div class="elem0"></div>
-				</div>
-				<div class="line">
-					<div class="elem1">Java Developer</div>
-					<div class="elem2"></div>
-					<div class="elem3"></div>
-					<div class="elem4">View candidates</div>
-				</div>
-				<div class="line">
-					<div class="elem1">Java Developer</div>
-					<div class="elem2"></div>
-					<div class="elem3"></div>
-					<div class="elem4">View candidates</div>
-				</div>
-				<div class="line">
-					<div class="elem1">Java Developer</div>
-					<div class="elem2"></div>
-					<div class="elem3"></div>
-					<div class="elem4">View candidates</div>
-				</div>
-				<div class="line">
-					<div class="elem1">Java Developer</div>
-					<div class="elem2"></div>
-					<div class="elem3"></div>
-					<div class="elem4">View candidates</div>
-				</div>
-				<div class="line">
-					<div class="elem1">Java Developer</div>
-					<div class="elem2"></div>
-					<div class="elem3"></div>
-					<div class="elem4">View candidates</div>
-				</div>
-				<div class="line">
-					<div class="elem1">Java Developer</div>
-					<div class="elem2"></div>
-					<div class="elem3"></div>
-					<div class="elem4">View candidates</div>
-				</div>
-			</div>
-
-			<div class="page-information">
-				Rows per page:
-				<form>
-					<select class="page-information_select">
-						<option>3</option>
-						<option>5</option>
-						<option selected>10</option>
-					</select>
-				</form>
-				<span>1-10 of 100</span>
-				<div class="keys">
-					<a href="#" class="previous">&#8249;</a>
-					<a href="#" class="next">&#8250;</a>
-				</div>
-			</div>
-		</div>
-
-		<button class="main-button">
-			<div class="plus1"></div>
-			<div class="plus2"></div>
-			
-		</button> 
+					<!-- paginator -->
+					<div class="paginator footer-paginator">
+						<span class="paginator-text">1-10</span>
+						<span class="paginator-text">of</span>
+						<span class="paginator-text">100</span>
+						<a class="button paginator__prev" href="#">&lsaquo;</a>
+						<a class="button paginator__next" href="#">&rsaquo;</a>
+					</div>
+					<!--// paginator -->
+					<button class="button footer-button">+</button>
+				</footer>
+			</section>
+		</main>
+		<!--// main-->
 	</div>
-
 </body>
 </html>
